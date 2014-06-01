@@ -1,0 +1,13 @@
+
+{
+  "name"         : "texas-death-row",
+  "version"      : "0.0.1",
+  "description"  : "API that scrapes the Criminal Justice Department of Texas for metadata on executions",
+  "main"         : "server.js",
+  "author"       : "Evin Ugur",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest"
+  }
+}
