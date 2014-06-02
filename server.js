@@ -27,6 +27,9 @@ var INDEX_TDCJ = 11;
 var INDEX_FIRST_NAME = 9;
 var IDNEX_LAST_NAME = 7;
 var INDEX_EXECUTION_NUMBER = 1;
+var INDEX_LAST_WORDS_HREF = 5;
+// constants
+var LAST_WORDS_URL_BASE = "http://www.tdcj.state.tx.us/death_row/";
 
 var people = [];
 
@@ -48,9 +51,13 @@ app.get('/scrape', function(req, res){
             	current_person.firt_name = children[INDEX_FIRST_NAME].children[0].data;
             	current_person.last_name = children[IDNEX_LAST_NAME].children[0].data;
             	current_person.execution_number = children[INDEX_EXECUTION_NUMBER].children[0].data;
-                console.log(current_person);
-                people.push(current_person);
-                break;
+                var lastwords = LAST_WORDS_URL_BASE + children[INDEX_LAST_WORDS_HREF].children[0].attribs["href"];
+                
+                console.log(lastwords);
+                //console.log(entries[i].children[3].name);
+                //console.log(lastwords);
+                //people.push(current_person);
+                //break;
             }
 
 		}
