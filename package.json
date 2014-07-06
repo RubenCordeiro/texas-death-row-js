@@ -1,13 +1,35 @@
-
 {
-  "name"         : "texas-death-row",
-  "version"      : "0.0.1",
-  "description"  : "API that scrapes the Criminal Justice Department of Texas for metadata on executions",
-  "main"         : "server.js",
-  "author"       : "Evin Ugur",
-  "dependencies" : {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest"
-  }
+  "name": "texas-death-row",
+  "version": "0.0.1",
+  "description": "API that scrapes the Criminal Justice Department of Texas for metadata on executions",
+  "main": "server.js",
+  "author": "Evin Ugur",
+  "dependencies": {
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evinugur/texas-death-row-js.git"
+  },
+  "keywords": [
+    "texas",
+    "death",
+    "row",
+    "executions",
+    "murder",
+    "usa",
+    "killing",
+    "people"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evinugur/texas-death-row-js/issues"
+  },
+  "homepage": "http://evinugur.com"
 }
